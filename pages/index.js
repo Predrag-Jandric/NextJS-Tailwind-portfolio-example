@@ -21,7 +21,7 @@ const Home = () => {
           </p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
-            
+          <ProjectsBtn />
           </div>
         </div>
       </div>
