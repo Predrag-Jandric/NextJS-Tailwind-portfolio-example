@@ -145,7 +145,7 @@ const About = () => {
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={itemIndex}  // Add the key prop here
                   className={`relative cursor-pointer capitalize xl:text-lg ${index === itemIndex
                     ? 'text-accent after:w-full after:h-[2px] after:bg-white after:absolute after:-bottom-2 after:-left-0 after:transition-all after:duration-300'
                     : 'after:w-0'
@@ -156,20 +156,22 @@ const About = () => {
                 </div>
               );
             })}
+
           </div>
           <section className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <article
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white" key={itemIndex}>
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white" >
                   {/* Title */}
                   <p className="mb-2 md:mb-0">{item.title}</p>
                   <p className="hidden md:flex">-</p>
                   <p>{item.stage}</p>
                   <article className="flex gap-x-4">
                     {/* Icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>
+                    {item.icons?.map((icon, itemIndexThree) => {
+                      return <div key={itemIndexThree} className="text-2xl text-white">{icon}</div>  // You have the key prop here
                     })}
                   </article>
                 </article>
