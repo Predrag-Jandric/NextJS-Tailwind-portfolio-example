@@ -1,7 +1,11 @@
 # NextJS & Tailwind - portfolio example 
 
 # 🔗 [Live Preview](https://main--eclectic-biscotti-7a14e6.netlify.app/)
-![Design preview]()
+![Design preview](./public/images-for-README/home.gif)
+![Design preview](./public/images-for-README/about.gif)
+![Design preview](./public/images-for-README/work.gif)
+![Design preview](./public/images-for-README/testimonials.gif)
+![Design preview](./public/images-for-README/form.png)
 
 ## About this project: 
 
