@@ -111,29 +111,29 @@ const About = () => {
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div className="">
               {/* Years of experience and Satisfied customers counters in a row */}
-              <div className="flex text-center">
+              <div className="flex text-center gap-1">
                 {/* Years of experience counter */}
-                <div className="relative">
+                <div className="relative text-center xl:text-left">
                   <div className="text-3xl font-extrabold text-accent">
                     <CountUp start={0} end={99} duration={5} /> +
                   </div>
-                  <div className="uppercase tracking-[1px] leading-[1.4] text-center my-3">Years of experience</div>
+                  <div className="uppercase tracking-[1px] leading-[1.4] my-3">Years of experience</div>
                 </div>
 
                 {/* Satisfied customers counter */}
-                <div className="relative">
+                <div className="relative text-center xl:text-left">
                   <div className="text-3xl font-extrabold text-accent">
                     <CountUp start={0} end={220} duration={5} /> +
                   </div>
-                  <div className="uppercase tracking-[1px] leading-[1.4] text-center my-3">Satisfied customers</div>
+                  <div className="uppercase tracking-[1px] leading-[1.4] my-3">Satisfied customers</div>
                 </div>
 
                 {/* Projects done */}
-                <div className="relative">
+                <div className="relative text-center xl:text-left">
                   <div className="text-3xl font-extrabold text-accent">
                     <CountUp start={0} end={60} duration={5} /> +
                   </div>
-                  <div className="uppercase tracking-[1px] leading-[1.4] text-center my-3">Projects done</div>
+                  <div className="uppercase tracking-[1px] leading-[1.4] my-3">Projects done</div>
                 </div>
               </div>
             </div>
